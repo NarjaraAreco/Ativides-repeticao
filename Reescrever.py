@@ -2,8 +2,9 @@
 # for i in range(1, 10) :
 
 # s = s + i
-
+i = 1
 s = 0
-while 0 < 10:
-    s += 1
-    print(s, end = ' ')
+while i < 10:
+    s += i
+    i += 1
+print(s)
