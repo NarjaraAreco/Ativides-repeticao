@@ -7,12 +7,12 @@
 
 # Este é um exemplo de retângulo 3 x 7 costruído com a letra o
 
-caracter = ''
-while not caracter:
-    caracter = input('Digite 1 caracter: ')
-    altura = int(input("Digite altura: "))
-    largura = int(input("Digite largura: "))
-for i in  range (altura):
-    for y in range (largura):
-        print(caracter, end = ' ')
-    print("")
+caracter = input('Digite caracter: ')
+altura = int(input('Digite altura: '))
+largura = int(input('Digite largura: '))
+
+if altura == largura:
+    print('Falha')
+else:
+    for i in range(altura):
+        print(largura*caracter)
